@@ -1,7 +1,6 @@
 import streamlit as st
 from jsrecordbutton import jsbutton
 from streamlit_option_menu import option_menu
-import vosk
 from game.streamlit_app import game
 from cards import cards
 from voice_recognizing_button import voice_recognizing_button
@@ -89,5 +88,4 @@ def main():
 
 
 if __name__ == "__main__":
-    model = vosk.Model("vosk-model-small-ru-0.22")
     main()
