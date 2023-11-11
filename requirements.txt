@@ -20,6 +20,3 @@ gensim
 
 transformers
 sentence-transformers
-
-vosk
-PyAudio
