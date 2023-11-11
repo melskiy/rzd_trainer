@@ -2,7 +2,7 @@ from transformers import PreTrainedTokenizer, PreTrainedTokenizerFast
 from transformers import T5ForConditionalGeneration
 
 
-def summarization(text: str, tokenizer_sum: PreTrainedTokenizer | PreTrainedTokenizerFast, model_sum: T5ForConditionalGeneration):
+def summarization(text: str, tokenizer_sum, model_sum):
     input_ids = tokenizer_sum(
         [text],
         max_length=300,
